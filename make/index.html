@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom 2048 Game Creator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Create Your Custom 2048 Game</h1>
+
+    <!-- Image upload section -->
+    <div class="image-upload">
+      <h3>Upload Images for Tiles</h3>
+      <div class="tile-upload-container">
+        <!-- For each tile value -->
+        <div class="tile-upload">
+          <label for="tile-2">2</label>
+          <input type="file" id="tile-2" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-4">4</label>
+          <input type="file" id="tile-4" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-8">8</label>
+          <input type="file" id="tile-8" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-16">16</label>
+          <input type="file" id="tile-16" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-32">32</label>
+          <input type="file" id="tile-32" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-64">64</label>
+          <input type="file" id="tile-64" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-128">128</label>
+          <input type="file" id="tile-128" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-256">256</label>
+          <input type="file" id="tile-256" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-512">512</label>
+          <input type="file" id="tile-512" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-1024">1024</label>
+          <input type="file" id="tile-1024" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-2048">2048</label>
+          <input type="file" id="tile-2048" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-4096">4096</label>
+          <input type="file" id="tile-4096" accept="image/*">
+        </div>
+        <div class="tile-upload">
+          <label for="tile-8192">8192</label>
+          <input type="file" id="tile-8192" accept="image/*">
+        </div>
+      </div>
+      <button id="save-button">Save Custom Tiles</button>
+    </div>
+
+    <!-- Game section -->
+    <div id="game-container" class="game-container">
+      <button id="play-button" style="display: none;">Play Custom Game</button>
+      <div id="board" class="board">
+        <!-- Game board will be dynamically generated here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
